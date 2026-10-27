@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rule a Day: one small rule a day</title><meta name="description" content="Quick, practical rules on mind, focus, body and style, plus a daily brain puzzle. Follow @rule_a_day.">
+<meta property="og:title" content="Rule a Day: one small rule a day"><meta property="og:description" content="Quick, practical rules on mind, focus, body and style, plus a daily brain puzzle. Follow @rule_a_day.">
+<meta property="og:image" content="img/logo.png"><link rel="icon" href="img/logo.png">
+<style>
+:root{--bg:#FFFBF3;--surface:#FFFFFF;--ink:#14181F;--muted:#5F6673;--line:#EFE6D6;--amber:#F7B731;--amber-ink:#7A4E00;
+--navy:#10182B;--shadow:0 10px 30px rgba(20,24,31,.08);color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0E1117;--surface:#161B24;--ink:#F2F4F8;--muted:#A3ABB9;--line:#242B38;
+--amber-ink:#FFD27A;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);
+border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:12px;height:64px}
+header.top img{width:36px;height:36px;border-radius:50%}
+header.top b{font-size:17px;letter-spacing:-.01em}
+header.top nav{margin-left:auto;display:flex;gap:18px;font-size:14px;font-weight:600}
+header.top nav a{text-decoration:none;color:var(--muted)}header.top nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;
+background:var(--amber);color:#1B1300;box-shadow:var(--shadow)}
+.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);box-shadow:none}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:64px 0 40px}
+.hero h1{font-size:clamp(34px,5.5vw,58px);line-height:1.05;letter-spacing:-.03em;margin:0 0 16px}
+.hero h1 span{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--amber) 55%,transparent) 0)}
+.hero p{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:34em}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .art{position:relative;justify-self:center}
+.hero .art img{width:min(320px,70vw);filter:drop-shadow(0 18px 30px rgba(0,0,0,.18));animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){.hero .art img{animation:none}}
+.bubble{position:absolute;top:6%;right:-6%;background:var(--surface);border:1px solid var(--line);border-radius:16px;
+padding:10px 14px;font-weight:700;font-size:14px;box-shadow:var(--shadow)}
+section{padding:42px 0}
+h2{font-size:clamp(24px,3.4vw,34px);letter-spacing:-.02em;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 24px}
+.series{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.s{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;border-top:5px solid var(--c)}
+.s .e{font-size:26px}.s h3{margin:6px 0 4px;font-size:18px}.s p{margin:0;color:var(--muted);font-size:14.5px}
+.reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.r{text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+transition:transform .15s}
+.r:hover{transform:translateY(-3px)}
+.r img{aspect-ratio:9/16;object-fit:cover;width:100%;background:#222}
+.r div{padding:10px 12px}.r small{font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+.r h3{margin:2px 0 0;font-size:14.5px;line-height:1.3}
+.puzzle{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+.card .tag{display:inline-block;background:var(--amber);color:#1B1300;font-weight:800;font-size:12px;letter-spacing:.06em;
+border-radius:999px;padding:4px 12px;text-transform:uppercase}
+.card blockquote{margin:14px 0;font-size:20px;font-weight:700;line-height:1.35}
+.card .muted{color:var(--muted)}
+details.reveal summary{cursor:pointer;font-weight:700;color:var(--amber-ink)}
+.about{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.about .card h3{margin:0 0 6px;font-size:17px}.about .card p{margin:0;color:var(--muted);font-size:15px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;gap:18px;flex-wrap:wrap;align-items:center}footer nav{margin-left:auto;display:flex;gap:16px}
+.doc{max-width:720px;padding:48px 0}.doc h1{font-size:36px;letter-spacing:-.02em;margin:0 0 6px}.doc h2{font-size:20px;margin:26px 0 6px}
+.doc p,.doc li{color:var(--muted)}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:36px}.hero .art{order:-1}.bubble{right:0}
+.puzzle,.about{grid-template-columns:1fr}header.top nav a.hide{display:none}}
+</style></head><body>
+<header class="top"><div class="wrap"><a href="./" style="display:flex;gap:10px;align-items:center;text-decoration:none">
+<img src="img/logo.png" alt=""><b>Rule a Day</b></a>
+<nav><a class="hide" href="#series">Series</a><a class="hide" href="#reels">Latest</a><a class="hide" href="#puzzle">Puzzle</a>
+<a href="https://www.instagram.com/rule_a_day/" rel="noopener">Instagram ↗</a></nav></div></header>
+<main><div class="wrap"><section class="hero"><div>
+<h1>One <span>small rule</span> a day to think, work and live better.</h1>
+<p>Quick, practical rules on mind, focus, body and style, plus a daily brain puzzle. Each one takes under 30 seconds.</p>
+<div class="cta"><a class="btn" href="https://www.instagram.com/rule_a_day/" rel="noopener">Follow @rule_a_day</a><a class="btn ghost" href="#series">See the series</a></div></div>
+<div class="art"><img src="img/mascot.png" alt="The Rule a Day mascot"><div class="bubble">New rule today! 👋</div></div></section></div>
+<section id="series"><div class="wrap"><h2>Pick your rule</h2><p class="lead">Every series is a numbered set of short rules. Follow the ones you like.</p>
+<div class="series"><div class="s" style="--c:#7C3AED"><div class="e">🧠</div>
+<h3>Mind Rule</h3><p>Learn one proven psychology insight a day to understand your mind and feel a little wiser.</p></div><div class="s" style="--c:#0369A1"><div class="e">⚡</div>
+<h3>Productivity Rule</h3><p>Get one simple, proven trick a day to focus better, learn faster, and get more done.</p></div><div class="s" style="--c:#15803D"><div class="e">💪</div>
+<h3>Body Rule</h3><p>Pick up one easy habit a day to move more, sleep better, and feel good.</p></div><div class="s" style="--c:#FF6B35"><div class="e">🏋️</div>
+<h3>Train Rule</h3><p>Discover why workouts stick, how rest builds strength, and how to keep training without quitting.</p></div><div class="s" style="--c:#FFB200"><div class="e">🧩</div>
+<h3>Puzzle Rule</h3><p>Test your mind with a quick daily puzzle and see how fast you can think.</p></div><div class="s" style="--c:#8E3B46"><div class="e">💔</div>
+<h3>Heartbreak Rule</h3><p>Find one gentle line a day that helps you feel seen while healing from heartbreak.</p></div><div class="s" style="--c:#B5174E"><div class="e">🥻</div>
+<h3>Saree Rule</h3><p>Learn one easy saree styling trick a day to drape with confidence for any occasion.</p></div></div></div></section>
+<section id="reels"><div class="wrap"><h2>Latest Reels</h2><p class="lead">Tap one to watch it on Instagram.</p><div class="reels"><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#FFB200"><img src="img/2026-10-26-puzzle-rule-003.jpg" alt="You Always Light It Wrong" loading="lazy">
+<div><small>Puzzle Rule</small><h3>The Match In The Dark</h3></div></a><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#8E3B46"><img src="img/2026-10-26-heartbreak-rule-001.jpg" alt="Grief Spirals, It Doesn&#x27;t Line Up" loading="lazy">
+<div><small>Heartbreak Rule</small><h3>Grief Comes Back Sideways</h3></div></a><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#15803D"><img src="img/2026-10-26-body-005.jpg" alt="Sleep Debt Never Fully Resets" loading="lazy">
+<div><small>Body Rule</small><h3>The Weekend Sleep Myth</h3></div></a><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#FF6B35"><img src="img/2026-10-25-train-rule-001.jpg" alt="The Sweat Myth" loading="lazy">
+<div><small>Train Rule</small><h3>The Sweat Myth</h3></div></a><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#FFB200"><img src="img/2026-10-25-puzzle-rule-002.jpg" alt="Ten Seconds To Solve This" loading="lazy">
+<div><small>Puzzle Rule</small><h3>The Pink House Riddle</h3></div></a><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#0369A1"><img src="img/2026-10-25-productivity-003.jpg" alt="The Cost of Interruption" loading="lazy">
+<div><small>Productivity Rule</small><h3>The Cost of Interruption</h3></div></a><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#7C3AED"><img src="img/2026-10-25-mind-008.jpg" alt="The Paradox of Too Many Choices" loading="lazy">
+<div><small>Mind Rule</small><h3>The Paradox of Too Many Choices</h3></div></a><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#7C3AED"><img src="img/2026-10-25-mind-004.jpg" alt="Why Bad Days Stick Harder Than Good Ones" loading="lazy">
+<div><small>Mind Rule</small><h3>Why Bad Days Stick Harder Than Good Ones</h3></div></a><a class="r" href="https://www.instagram.com/rule_a_day/" rel="noopener"
+style="--c:#7C3AED"><img src="img/2026-10-25-mind-003.jpg" alt="The Real Cause of Procrastination" loading="lazy">
+<div><small>Mind Rule</small><h3>The Real Cause of Procrastination</h3></div></a></div></div></section>
+<section id="puzzle"><div class="wrap"><h2>This week's puzzle 🧩</h2>
+<p class="lead">Think you've got it? Comment your answer on the Reel. No peeking: the answer drops with the next puzzle.</p>
+<div class="puzzle"><div class="card"><span class="tag">Puzzle Rule #3</span>
+<blockquote>A man walks into a pitch-dark room holding a match, a candle, an oil lamp, and a wood stove. He has no other light source. He can light only one object first. Which one does he strike?</blockquote>
+<a class="btn" href="https://www.instagram.com/rule_a_day/" rel="noopener">Answer on Instagram →</a></div>
+<div class="card"><span class="tag">Last puzzle's answer</span>
+<blockquote class="muted" style="font-size:16px;font-weight:600">A one-story house has pink walls, pink furniture, pink everything inside. What color are the stairs?</blockquote>
+<details class="reveal"><summary>Show the answer</summary><p style="font-size:20px;font-weight:800;margin:8px 0 0">There are no stairs. It&#x27;s a one-storey house!</p></details></div></div></div></section>
+<section><div class="wrap"><h2>How we make it</h2><p class="lead">Honest about the process.</p><div class="about">
+<div class="card"><h3>Simple and practical</h3><p>One idea per Reel, explained in plain words you can use the same day.</p></div>
+<div class="card"><h3>Made with AI help</h3><p>Scripts are drafted with AI and the voiceover is AI-generated. Every Reel is labelled as AI content.</p></div>
+<div class="card"><h3>General information only</h3><p>Nothing here is medical, financial or professional advice. Talk to a qualified person for your situation.</p></div>
+</div></div></section></main>
+<footer><div class="wrap"><span>© 2026 Rule a Day · Made with AI help · General information only</span>
+<nav><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="mailto:vamshimorlawar@gmail.com">vamshimorlawar@gmail.com</a></nav></div></footer>
+</body></html>

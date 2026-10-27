@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms · Rule a Day</title><meta name="description" content="Terms of use for Rule a Day.">
+<meta property="og:title" content="Terms · Rule a Day"><meta property="og:description" content="Terms of use for Rule a Day.">
+<meta property="og:image" content="../img/logo.png"><link rel="icon" href="../img/logo.png">
+<style>
+:root{--bg:#FFFBF3;--surface:#FFFFFF;--ink:#14181F;--muted:#5F6673;--line:#EFE6D6;--amber:#F7B731;--amber-ink:#7A4E00;
+--navy:#10182B;--shadow:0 10px 30px rgba(20,24,31,.08);color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0E1117;--surface:#161B24;--ink:#F2F4F8;--muted:#A3ABB9;--line:#242B38;
+--amber-ink:#FFD27A;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);
+border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:12px;height:64px}
+header.top img{width:36px;height:36px;border-radius:50%}
+header.top b{font-size:17px;letter-spacing:-.01em}
+header.top nav{margin-left:auto;display:flex;gap:18px;font-size:14px;font-weight:600}
+header.top nav a{text-decoration:none;color:var(--muted)}header.top nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;
+background:var(--amber);color:#1B1300;box-shadow:var(--shadow)}
+.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);box-shadow:none}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:64px 0 40px}
+.hero h1{font-size:clamp(34px,5.5vw,58px);line-height:1.05;letter-spacing:-.03em;margin:0 0 16px}
+.hero h1 span{background:linear-gradient(transparent 62%,color-mix(in srgb,var(--amber) 55%,transparent) 0)}
+.hero p{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:34em}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .art{position:relative;justify-self:center}
+.hero .art img{width:min(320px,70vw);filter:drop-shadow(0 18px 30px rgba(0,0,0,.18));animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){.hero .art img{animation:none}}
+.bubble{position:absolute;top:6%;right:-6%;background:var(--surface);border:1px solid var(--line);border-radius:16px;
+padding:10px 14px;font-weight:700;font-size:14px;box-shadow:var(--shadow)}
+section{padding:42px 0}
+h2{font-size:clamp(24px,3.4vw,34px);letter-spacing:-.02em;margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 24px}
+.series{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.s{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;border-top:5px solid var(--c)}
+.s .e{font-size:26px}.s h3{margin:6px 0 4px;font-size:18px}.s p{margin:0;color:var(--muted);font-size:14.5px}
+.reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.r{text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+transition:transform .15s}
+.r:hover{transform:translateY(-3px)}
+.r img{aspect-ratio:9/16;object-fit:cover;width:100%;background:#222}
+.r div{padding:10px 12px}.r small{font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+.r h3{margin:2px 0 0;font-size:14.5px;line-height:1.3}
+.puzzle{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+.card .tag{display:inline-block;background:var(--amber);color:#1B1300;font-weight:800;font-size:12px;letter-spacing:.06em;
+border-radius:999px;padding:4px 12px;text-transform:uppercase}
+.card blockquote{margin:14px 0;font-size:20px;font-weight:700;line-height:1.35}
+.card .muted{color:var(--muted)}
+details.reveal summary{cursor:pointer;font-weight:700;color:var(--amber-ink)}
+.about{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.about .card h3{margin:0 0 6px;font-size:17px}.about .card p{margin:0;color:var(--muted);font-size:15px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;gap:18px;flex-wrap:wrap;align-items:center}footer nav{margin-left:auto;display:flex;gap:16px}
+.doc{max-width:720px;padding:48px 0}.doc h1{font-size:36px;letter-spacing:-.02em;margin:0 0 6px}.doc h2{font-size:20px;margin:26px 0 6px}
+.doc p,.doc li{color:var(--muted)}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:36px}.hero .art{order:-1}.bubble{right:0}
+.puzzle,.about{grid-template-columns:1fr}header.top nav a.hide{display:none}}
+</style></head><body>
+<header class="top"><div class="wrap"><a href="../" style="display:flex;gap:10px;align-items:center;text-decoration:none">
+<img src="../img/logo.png" alt=""><b>Rule a Day</b></a>
+<nav><a class="hide" href="../#series">Series</a><a class="hide" href="../#reels">Latest</a><a class="hide" href="../#puzzle">Puzzle</a>
+<a href="https://www.instagram.com/rule_a_day/" rel="noopener">Instagram ↗</a></nav></div></header>
+<main><div class="wrap doc"><h1>Terms</h1><p>Last updated 27 October 2026</p>
+<h2>General information only</h2><p>Rule a Day shares short, general tips for learning and entertainment. Nothing on this site or on our
+channels is medical, financial, legal or other professional advice. Check with a qualified professional before making decisions about
+your health, money or wellbeing.</p>
+<h2>AI-assisted content</h2><p>Scripts are drafted with AI help and voiceovers are AI-generated. Puzzles are for fun and thinking
+practice, not IQ or ability tests.</p>
+<h2>Content</h2><p>Our videos, images, mascots and text belong to Rule a Day. Stock footage is used under its providers' licences.
+Please don't re-upload our content without permission; sharing links is always welcome.</p>
+<h2>Contact</h2><p><a href="mailto:vamshimorlawar@gmail.com">vamshimorlawar@gmail.com</a></p></div></main>
+<footer><div class="wrap"><span>© 2026 Rule a Day · Made with AI help · General information only</span>
+<nav><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="mailto:vamshimorlawar@gmail.com">vamshimorlawar@gmail.com</a></nav></div></footer>
+</body></html>
